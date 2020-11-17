@@ -1,3 +1,6 @@
+/* eslint-disable max-len */
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require("path");
 const webpack = require("webpack");
 const nodeExternals = require("webpack-node-externals");
@@ -54,6 +57,15 @@ const getConfig = (target) => ({
       {
         test: /\.(scss|css)$/,
         use: [MiniCssExtractPlugin.loader, "css-loader", "sass-loader"],
+      },
+      {
+        test: /\.(svg|png|jp(e*)g)$/,
+        loader: "url-loader",
+        options: {
+          limit: 8000,
+          name: "images/[hash]-[name].[ext]",
+          esModule: false,
+        },
       },
     ],
   },
