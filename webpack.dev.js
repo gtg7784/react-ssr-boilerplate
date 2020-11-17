@@ -39,3 +39,10 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
+    new MiniCssExtractPlugin(),
+    new HtmlWebpackPlugin({
+      filename: "index.html",
+      template: "public/index.dev.html",
+    }),
+  ],
+};
