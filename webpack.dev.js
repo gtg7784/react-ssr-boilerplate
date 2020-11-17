@@ -1,3 +1,5 @@
+/* eslint-disable import/no-extraneous-dependencies */
+
 const path = require("path");
 const webpack = require("webpack");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
@@ -37,10 +39,3 @@ module.exports = {
   },
   plugins: [
     new webpack.HotModuleReplacementPlugin(),
-    new MiniCssExtractPlugin(),
-    new HtmlWebpackPlugin({
-      filename: "index.html",
-      template: "public/index.dev.html",
-    }),
-  ],
-};
