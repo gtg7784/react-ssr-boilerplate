@@ -44,12 +44,13 @@
     "paths": {
       "@src/*": ["src/*"],
       "@components/*": ["src/components/*"],
-      "@pages/*": ["src/components/pages/*"],
-      "@store": ["src/store/index"],
-      "@actions/*": ["src/store/actions/*"],
-      "@reducers/*": ["src/store/reducers/*"],
+      "@pages/*": ["src/pages/*"],
+      "@stores": ["src/stores/index"],
+      "@actions/*": ["src/stores/actions/*"],
+      "@reducers/*": ["src/stores/reducers/*"],
       "@util/*": ["src/util/*"],
       "@styles/*": ["src/styles/*"],
+      "@assets/*": ["stc/assets/*"]
     },                           /* A series of entries which re-map imports to lookup locations relative to the 'baseUrl'. */
     // "rootDirs": [],                        /* List of root folders whose combined content represents the structure of the project at runtime. */
     // "typeRoots": [],                       /* List of folders to include type definitions from. */
